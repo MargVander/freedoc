@@ -11,7 +11,6 @@ end
 end
 
 50.times do
-	t = 
 	appointment = Appointment.new(date: Faker::Time.forward(14, :all))
 	appointment.doctor = Doctor.all.sample
 	appointment.patient = Patient.all.sample
