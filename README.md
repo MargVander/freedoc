@@ -1,24 +1,30 @@
-# README
+# FREE_DOC
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+Git clone le projet.
+Placez-vous à la racine de celui-ci puis dans le terminal :
 
-* Ruby version
+`rails db:migrate`  => si il y a des migrations down.
+`rails db:seed`  => vous charge une base de donnée aléatoire.
 
-* System dependencies
 
-* Configuration
+`rails console `
+```
+exemple : d = Doctor.first
+          d.appointments
+          ...
 
-* Database creation
+```
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+## Built With
 
-* Deployment instructions
+* [Ruby on rails](https://rubyonrails.org/) - The web framework used
 
-* ...
+
+
+## Authors
+
+* **Margaux Vanderbeken**
