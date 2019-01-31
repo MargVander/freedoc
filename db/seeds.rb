@@ -15,7 +15,7 @@ end
 	appointment = Appointment.new(date: Faker::Time.forward(14, :all))
 	appointment.doctor = Doctor.all.sample
 	appointment.patient = Patient.all.sample
-	appointment.city
+	appointment.city = City.all.sample
 	appointment.save
 end
 
