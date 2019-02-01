@@ -1,6 +1,10 @@
 require 'faker'
 
 10.times do
+	city = City.create!(name: Faker::Nation.capital_city)
+end
+
+10.times do
 	doctor = Doctor.new(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, postal_code: rand(1000..9999))
 	doctor.city = City.all.sample
 end
@@ -18,9 +22,6 @@ end
 	appointment.save
 end
 
-10.times do
-	city = City.create!(name: Faker::Nation.capital_city)
-end
 
 10.times do
 	specialty = Specialty.create!(name: Faker::Science.element)
