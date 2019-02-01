@@ -7,11 +7,13 @@ end
 10.times do
 	doctor = Doctor.new(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, postal_code: rand(1000..9999))
 	doctor.city = City.all.sample
+	doctor.save
 end
 
 30.times do
 	patient = Patient.new(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name)
 	patient.city = City.all.sample
+	patient.save
 end
 
 50.times do
